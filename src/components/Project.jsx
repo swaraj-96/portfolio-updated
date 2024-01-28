@@ -12,7 +12,7 @@ const Project = () => {
         <span className="text-2xl font-semibold px-2 text-black">PROJECTS</span>
         ~
       </h4>
-      <div className="grid md:grid-cols-2 gap-4 mt-4">
+      <div className="grid md:grid-cols-2 gap-4 my-8">
         {data.map((project) => (
           <Link key={project.id} to={"/projects/" + project.id}>
             <ProjectCard projectData={project} />
