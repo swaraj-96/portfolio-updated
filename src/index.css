@@ -5,7 +5,7 @@
 :root{
    
     --bg-img: url('/bg.jpg') no-repeat center center;
-    --bg-blur: rgba(255, 255, 255, 0.2);
+    
 }
 
 html{
@@ -43,15 +43,17 @@ body{
     left: 0;
     bottom: -6px;
     transition: 0.5s;
+    margin-bottom: 2px;
  }
 
  .bar:hover::after{
   width: 100%;
 }
 
-.bar::active::after {
+.bar-active::after {
   width: 100%;
 }
+
 
 .work{
   border-radius: 10px;

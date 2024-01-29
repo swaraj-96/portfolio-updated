@@ -23,7 +23,7 @@ const ThemeButton = () => {
           className="sr-only w-6"
         />
         <span
-          className={`slider mx-1 flex md:h-8 md:w-[60px] h-6 w-[40px] items-center rounded-full p-1 duration-200 ${
+          className={`slider mx-1 flex sm:h-8 sm:w-[60px] h-6 w-[40px] items-center rounded-full p-1 duration-200 ${
             darkMode ? "bg-[#374151]" : "bg-[#CCCCCE]"
           }`}
         >
