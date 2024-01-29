@@ -29,7 +29,7 @@ const Footer = () => {
           </a>
         </div>
         <h1 className="md:text-lg font-medium gradient-text text-sm">
-          ★ DESIGNED AND CODED BY SWARAJ PRADHAN ★
+          ★ DESIGNED AND CODED BY SWARAJ ★
         </h1>
       </div>
     </div>
