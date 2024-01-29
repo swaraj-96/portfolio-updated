@@ -1,4 +1,5 @@
 import React from "react";
+import { email } from "../utils/constant";
 
 const MyInfo = () => {
   return (
@@ -27,7 +28,7 @@ const MyInfo = () => {
           free to message me at{" "}
           <a
             className="text-red-600 font-semibold"
-            href="mailto:pswaraj96@gmail.com"
+            href={`mailto:${email}`}
           >
             pswaraj96@gmail.com
           </a>{" "}

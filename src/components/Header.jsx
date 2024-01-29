@@ -5,26 +5,26 @@ import ThemeButton from "./ThemeButton";
 
 const Header = () => {
   return (
-    <header className="sticky w-full top-0 z-10  backdrop-filter backdrop-blur-lg bg-opacity-30">
+    <header className="sticky w-full top-0 z-10  backdrop-filter backdrop-blur-lg bg-opacity-50">
       <ProgressBar/>
       <div className=" container-max px-4 flex justify-between items-center h-24">
         <div className="flex items-center gap-4">
-          <h3 className=" text-xl font-semibold">SWARAJ</h3>
+          <Link to="/" className=" text-xl font-semibold dark:text-white">SWARAJ</Link>
           <ThemeButton/>
         </div>
-        <ul className="flex items-center gap-6 ">
+        <ul className="flex items-center gap-6 text-black dark:text-white">
           <li>
-            <Link to="/" className="bar hover:text-black text-gray-500 text-lg font-">
+            <Link to="/" className="bar hover:text-blue-600 text-lg font-">
               HOME
             </Link>
           </li>
           <li>
-            <Link to="/about" className="bar hover:text-black text-zinc-500 text-lg">
+            <Link to="/about" className="bar hover:text-blue-600  text-lg">
               ABOUT
             </Link>
           </li>
           <li>
-            <Link to="/resume" className="bar hover:text-black text-zinc-500 text-lg">
+            <Link to="/resume" className="bar hover:text-blue-600  text-lg">
               RESUME
             </Link>
           </li>

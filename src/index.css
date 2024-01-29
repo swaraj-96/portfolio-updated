@@ -24,12 +24,11 @@ body{
     .container-max {
       @apply container max-w-[1080px] w-[90%] mx-auto;
     }
-    .container-md {
-      @apply container max-w-[768px] w-[90%] mx-auto;
+    .icons {
+      @apply  w-8 h-8 text-gray-700 transition ease-in-out   hover:scale-110 duration-300 hover:-translate-y-1 hover:text-red-800 dark:text-red-800 dark:hover:text-indigo-800;
     }
-    .flex-center {
-      @apply flex justify-center items-center;
-    }
+
+    
   }
 
   .bar{
