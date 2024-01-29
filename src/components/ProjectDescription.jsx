@@ -7,13 +7,13 @@ const ProjectDescription = ({projectDescription}) => {
           <h1 className="font-bold text-xl text-blue-800">
             Project Description
           </h1>
-          <p>{projectDescription.info || projectDescription}</p>
+          <p className='dark:text-gray-400'>{projectDescription.info || projectDescription}</p>
         </div>
         <div className="w-1/2 px-2 space-y-2 items-center">
           <h1 className="font-bold text-xl text-blue-800">Tech Stack:</h1>
-          <p>{projectDescription.techStack}</p>
+          <p className='dark:text-gray-400'>{projectDescription.techStack}</p>
           <h1 className="font-bold text-xl text-blue-800">Key Features:</h1>
-          <p>{projectDescription.keyFeatures}</p>
+          <p className='dark:text-gray-400'>{projectDescription.keyFeatures}</p>
         </div>
       </div>
   )

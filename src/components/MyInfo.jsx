@@ -4,7 +4,7 @@ const MyInfo = () => {
   return (
     <div className="md:flex items-center">
       <div className="md:w-7/12 pr-4 mr-auto ">
-        <p>
+        <p className="dark:text-gray-400">
           👋 Hi there! I'm{" "}
           <span className="font-bold gradient-text text-lg animate-pulse">
             Swaraj

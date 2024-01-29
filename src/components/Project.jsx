@@ -9,7 +9,7 @@ const Project = () => {
     <div className="container-max px-4">
       <h4 className="text-center block text-gray-500">
         ~
-        <span className="text-2xl font-semibold px-2 text-black">PROJECTS</span>
+        <span className="text-2xl font-semibold px-2 text-black dark:text-white">PROJECTS</span>
         ~
       </h4>
       <div className="grid md:grid-cols-2 gap-4 my-8">

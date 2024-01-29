@@ -5,7 +5,7 @@ import { Outlet } from "react-router-dom"
 function App() {
  
   return (
-   <div className="flex flex-col min-h-screen ">
+   <div className="flex flex-col min-h-screen dark:bg-darkBgTheme">
     <Header/>
     <Outlet/>
     <Footer/>

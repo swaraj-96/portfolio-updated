@@ -24,7 +24,7 @@ const ProjectDetails = () => {
         githubUrl={project.githubUrl}
         deploymentUrl={project.deploymentUrl}
       />
-      <h1 className="text-center  text-2xl font-semibold py-4">Snapshots</h1>
+      <h1 className="text-center  text-2xl font-semibold py-4 dark:text-white">Snapshots</h1>
       <ProjectSnapshot snapshots = {project.screenshots}/>
     </div>
   );
