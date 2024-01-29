@@ -4,7 +4,7 @@ import { email } from "../utils/constant";
 const MyInfo = () => {
   return (
     <div className="md:flex items-center">
-      <div className="md:w-7/12 pr-4 mr-auto ">
+      <div className="md:w-7/12 md:pr-4 mr-auto ">
         <p className="dark:text-gray-400">
           👋 Hi there! I'm{" "}
           <span className="font-bold gradient-text text-lg animate-pulse">
@@ -35,7 +35,7 @@ const MyInfo = () => {
           🌐✨
         </p>
       </div>
-      <div className="md:w-4/12 pl-4 work my-4 md:my-0">
+      <div className="md:w-4/12 md: work my-4 md:my-0">
         <img
           src="/images/my-dp.jpg"
           className="rounded-lg w-full h-auto aspect-square"

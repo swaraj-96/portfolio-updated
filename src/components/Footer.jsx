@@ -28,7 +28,7 @@ const Footer = () => {
             <FaInstagram className="icons" />
           </a>
         </div>
-        <h1 className="text-lg font-medium gradient-text">
+        <h1 className="md:text-lg font-medium gradient-text text-sm">
           ★ DESIGNED AND CODED BY SWARAJ PRADHAN ★
         </h1>
       </div>
