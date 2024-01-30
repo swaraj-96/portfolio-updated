@@ -3,8 +3,8 @@ import { MdDarkMode } from "react-icons/md";
 import { MdLightMode } from "react-icons/md";
 
 const ThemeButton = () => {
-  const savedDarkMode = JSON.parse(localStorage.getItem("darkMode")) || false;
-  const [darkMode, setDarkMode] = useState(savedDarkMode);
+  const savedDarkMode = JSON.parse(localStorage.getItem("darkMode"));
+  const [darkMode, setDarkMode] = useState(savedDarkMode !== null ? savedDarkMode : true);
 
   useEffect(() => {
     localStorage.setItem("darkMode", JSON.stringify(darkMode));
