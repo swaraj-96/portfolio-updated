@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from "react";
+import { MdDarkMode } from "react-icons/md";
+import { MdLightMode } from "react-icons/md";
 
 const ThemeButton = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const savedDarkMode = JSON.parse(localStorage.getItem("darkMode")) || false;
+  const [darkMode, setDarkMode] = useState(savedDarkMode);
 
   useEffect(() => {
+    localStorage.setItem("darkMode", JSON.stringify(darkMode));
     if (darkMode) {
       document.documentElement.classList.add("dark");
     } else {
@@ -13,27 +17,27 @@ const ThemeButton = () => {
 
   return (
     <>
-      <label className="themeSwitcherTwo relative  cursor-pointer select-none items-center">
+      <div className="toggle flex justify-center items-center">
         <input
           type="checkbox"
+          id="checkbox"
           checked={darkMode}
           onChange={() => {
             setDarkMode(!darkMode);
           }}
-          className="sr-only w-6"
+          className="theme-checkbox opacity-0 absolute"
         />
-        <span
-          className={`slider mx-1 flex sm:h-8 sm:w-[60px] h-6 w-[40px] items-center rounded-full p-1 duration-200 ${
-            darkMode ? "bg-[#374151]" : "bg-[#CCCCCE]"
+        <label
+          htmlFor="checkbox"
+          className={`theme-label ${
+            darkMode ? "bg-[#374151]" : "bg-[#2167e9]"
           }`}
         >
-          <span
-            className={`dot md:h-6 md:w-6 h-3 w-3 rounded-full bg-white  duration-200 ${
-              darkMode ? "md:translate-x-[28px] translate-x-[20px]" : ""
-            }`}
-          ></span>
-        </span>
-      </label>
+          <div className="ball"></div>
+          <MdDarkMode />
+          <MdLightMode />
+        </label>
+      </div>
     </>
   );
 };
